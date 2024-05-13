@@ -4,7 +4,7 @@
 
 //This is imperative way/style of writing code
 // introducing JSX where we will even make this code shorter
-const jsxElt =  <React.Fragment>
+const jsxElt =  <>
                 <h1>Hello World!!</h1>
                 <p> This is lob </p>
                 <h2>All About React</h2>
@@ -12,7 +12,7 @@ const jsxElt =  <React.Fragment>
                     <li>Declarative</li>
                     <li>Single Page Application</li>
                 </ul>
-                </React.Fragment>
+                </>
                 
 ReactDOM.createRoot(document.getElementById("root")).render(jsxElt);
 //Problem is this will give error saying it doesnt understand <> as browser doesnt understand html so overcome this we will add Babel a compiler used to convert html to equivalent js
