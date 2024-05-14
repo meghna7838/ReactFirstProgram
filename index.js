@@ -13,7 +13,16 @@ const jsxElt =  <>
                     <li>Single Page Application</li>
                 </ul>
                 </>
+
+function App(){
+    return (
+        <>
+        <h2>Hello there</h2>
+        <p> How are you doing</p>
+        </>
+    );
+}
                 
-ReactDOM.createRoot(document.getElementById("root")).render(jsxElt);
+ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
 //Problem is this will give error saying it doesnt understand <> as browser doesnt understand html so overcome this we will add Babel a compiler used to convert html to equivalent js
 //So in html file use CDN and add type="text/babel in script tag"
